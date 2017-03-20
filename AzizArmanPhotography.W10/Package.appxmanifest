@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  xmlns:appstudio="http://schemas.microsoft.com/developer/appx/2015/appstudio" 
+  IgnorableNamespaces="uap mp appstudio">
+			<Identity Name="2d716319-a02b-48e8-97ab-1d2d8b25eaef" Publisher="CN=AppStudio" Version="1.0.0.0" />
+	    <mp:PhoneIdentity PhoneProductId="a2eff52b-4472-4e27-9499-b8fd2d28cd17" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+    <Properties>
+        <DisplayName>AppStudio App</DisplayName>
+        <PublisherDisplayName>AppStudio</PublisherDisplayName>
+        <Logo>Assets\StoreLogo.png</Logo>
+    </Properties>
+    <Dependencies>
+        <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+    </Dependencies>
+    <Resources>
+        <Resource Language="x-generate"/>
+    </Resources>
+    <Applications>
+        <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="AzizArmanPhotography.App">
+            <uap:VisualElements 
+			  DisplayName="Aziz Arman Photography"
+              Square150x150Logo="Assets\Square150x150Logo.png"
+              Square44x44Logo="Assets\Square44x44Logo.png"
+              Description="This app is all about Photography.In life I sometimes experience such delightful moments that, it engulfs my heart and makes me bound to capture them to create some exquisite mementos!"
+              BackgroundColor="transparent">
+                <uap:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#000000"/>
+                <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square310x310Logo="Assets\Square310x310Logo.png" Square71x71Logo="Assets\Square71x71Logo.png">
+                    <uap:ShowNameOnTiles>
+                        <uap:ShowOn Tile="square150x150Logo"/>
+						<uap:ShowOn Tile="square310x310Logo" />
+                    </uap:ShowNameOnTiles>
+                </uap:DefaultTile>
+            </uap:VisualElements>
+        </Application>
+    </Applications>
+    <Capabilities>
+        <Capability Name="internetClient" />
+    </Capabilities>
+    <appstudio:Metadata>
+        <appstudio:Item Name="appId" Value="a2eff52b-4472-4e27-9499-b8fd2d28cd17" />
+        <appstudio:Item Name="model" Version="1.14" />
+        <appstudio:Item Name="formula" Value="Win10" Version="1.12.0223.3" />
+        <appstudio:Item DataSource="Facebook" Version="1.2.*"/>
+        <appstudio:Item DataSource="YouTube" Version="1.2.*"/>
+        <appstudio:Item DataSource="Bing" Version="1.2.*"/>
+        <appstudio:Item DataSource="Flickr" Version="1.2.*"/>
+    </appstudio:Metadata>
+</Package>
